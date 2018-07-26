@@ -24,7 +24,7 @@ class Jobs extends Component {
     let jobs = this.props.jobs
 
     if ("name" in query) {
-      jobs = jobs.filter(job => job.Name.indexOf(query.name) != -1)
+      jobs = jobs.filter(job => job.ID.indexOf(query.name) != -1)
     }
 
     if ("job_type" in query) {
